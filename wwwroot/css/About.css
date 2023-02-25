@@ -141,7 +141,7 @@ h2 {
     min-height: 100vh;
 }
 
-.card {
+#card1 {
     background: #287bff;
     display: flex;
     justify-content: center;

@@ -33,7 +33,12 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult TrafficRules()
+    public IActionResult TrafficSigns()
+    {
+        return View();
+    }
+
+    public IActionResult AccidentDetail()
     {
         return View();
     }

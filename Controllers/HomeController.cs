@@ -43,7 +43,11 @@ public class HomeController : Controller
         return View();
     }
 
+<<<<<<< HEAD
     public IActionResult NoOfCasualities()
+=======
+    public IActionResult Login()
+>>>>>>> b5863124eb23dba7b0044c5e5df1cbbdb2fb53de
     {
         return View();
     }

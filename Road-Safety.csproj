@@ -13,8 +13,12 @@
         <UpToDateCheckBuilt Include="tailwind.config.js" Set="Css" />
     </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="EnterpriseLibrary.Data.NetCore" Version="6.3.2" />
+  </ItemGroup>
+
     <Target Name="Tailwind" BeforeTargets="Build">
-        <Exec Command="npm run css:build"/>
+        <Exec Command="npm run css:build" />
     </Target>
 
 </Project>

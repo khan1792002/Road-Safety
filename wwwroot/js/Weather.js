@@ -1,13 +1,10 @@
-
-
 const temeratureField = document.querySelector(".temp")
 const locationFild = document.querySelector(".time_location p")
 const dataandtimeField = document.querySelector(".time_location span")
 const conditionFild = document.querySelector(".condition p")
 const searchFild = document.querySelector("search_area")
 const form = document.querySelector("form")
-
-FormData.addEventListener('submit',searchForLocation )
+let target = 'Rajkot'
 
 const fetchResult = async (targetLocation)=>{
     let URL = `http://api.weatherapi.com/v1/current.json?key=ef56406f6f604d31bf8235511232502&q=${targetLocation}&aqi=no`
@@ -42,7 +39,7 @@ function updateDetails(temp,locationName,time,condition){
 function searchForLocation(e) {
     e.preventDefult();
 
-    target = searchFild.value
+    target = document.getElementById("Search_v").value;
 
     fetchResult(target)
 }

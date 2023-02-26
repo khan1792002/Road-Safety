@@ -1,11 +1,11 @@
 <div class="container">
     <div class="weather_container">
         <div class="temp">
-            <p>20</p>
+            <p></p>
         </div>
         <div class="time_location">
-            <p>Delhi</p>
-            <p>12:58 - Monday 2023-02-26</p>
+            <p></p>
+            <span></span>
         </div>
         <div class="condition">
             <p></p>
@@ -14,10 +14,14 @@
     </div>
 </div>
 <nav>
-    <form action="">
-        <input type="text" placeholder="Search for location" class="search_area">
-        <button type="submit">Search</button>
+    <form>
+        <input type="text" placeholder="Search for location" id="Search_v" class="search_area">
+        <button type="submit" onclick="searchForLocation()">Search</button>
     </form>
 </nav>
 
-<script src="~/js/Weather.js" asp-append-version="true"></script>
+@section Scripts
+{
+    <script src="~/js/Weather.js" asp-append-version="true"></script>
+}
+

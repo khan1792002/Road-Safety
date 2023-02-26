@@ -63,6 +63,11 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult Weather()
+    {
+        return View();
+    }
+
     public IActionResult About()
     {
         return View();

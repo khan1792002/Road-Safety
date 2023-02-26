@@ -30,7 +30,8 @@ function updateDetails(temp,locationName,time,condition){
 
     let currentDay = getDayNane(new Date(splitDate).getDay())
 
-    temeratureField.innerHTML = temp
+    document.write(temp)
+    document.getElementById("demo").value = temp;
     locationFild.innerHTML = locationName
     dataandtimeField.innerHTML = `${splitDate} ${currentDay} ${splitTime}`
     conditionFild.innerHTML = condition
